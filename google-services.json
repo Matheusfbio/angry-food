@@ -1,0 +1,29 @@
+{
+	"project_info": {
+		"project_number": "851937779820",
+		"project_id": "angry-food",
+		"storage_bucket": "angry-food.firebasestorage.app"
+	},
+	"client": [
+		{
+			"client_info": {
+				"mobilesdk_app_id": "1:851937779820:android:211673c323fe2528f77849",
+				"android_client_info": {
+					"package_name": "com.matheusfabio.angryfood"
+				}
+			},
+			"oauth_client": [],
+			"api_key": [
+				{
+					"current_key": "AIzaSyBzp74y_2dkMKx3DEwE4iQqxfHB9bGFabI"
+				}
+			],
+			"services": {
+				"appinvite_service": {
+					"other_platform_oauth_client": []
+				}
+			}
+		}
+	],
+	"configuration_version": "1"
+}

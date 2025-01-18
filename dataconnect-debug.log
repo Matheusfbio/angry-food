@@ -1,0 +1,15 @@
+I0116 06:59:19.975942    2728 load.go:37] Reloading schema and connectors...
+I0116 06:59:20.018212    2728 control.go:45] [engine.Service /emulator/angry-food f325] UpdateSchema(): done sources: schema\schema.gql [1384B] 
+I0116 06:59:20.024213    2728 control.go:73] [engine.Service /emulator/angry-food f325] UpdateConnector(default): done sources: connector\mutations.gql [1163B] connector\queries.gql [1855B] 
+I0116 06:59:20.038215    2728 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "C:\\Users\\Matthew_Dev\\Documents\\react native\\angry-food\\dataconnect-generated\\js\\default-connector"
+I0116 06:59:20.039217    2728 collector.go:107] schema extensions wrote into "C:\\Users\\Matthew_Dev\\Documents\\react native\\angry-food\\dataconnect\\.dataconnect\\schema"
+Generated sources: prelude.gql [65151B] 
+I0116 06:59:20.042221    2728 collector.go:107] connector "default" javascriptSdk wrote into "C:\\Users\\Matthew_Dev\\Documents\\react native\\angry-food\\dataconnect-generated\\js\\default-connector"
+Generated sources: index.d.ts [264B] esm\index.esm.js [183B] esm\package.json [17B] index.cjs.js [224B] package.json [634B] 
+I0116 06:59:20.060216    2728 installsdk.go:76] Running command: C:\Program Files\nodejs\npm.cmd install file:dataconnect-generated\js\default-connector
+E0116 06:59:22.972048    2728 installsdk.go:78] Failed to install package: exit status 1
+I0116 06:59:22.972048    2728 load.go:115] Finished reloading
+I0116 06:59:22.973352    2728 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:9399
+I0116 06:59:22.974626    2728 dev.go:95] Listening on address (HTTP + gRPC): [::1]:9399
+I0116 06:59:35.631371    2728 control.go:45] [engine.Service /emulator/angry-food d7b4] UpdateSchema(): done sources: schema\schema.gql [1384B] 
+I0116 06:59:35.631922    2728 control.go:73] [engine.Service /emulator/angry-food d7b4] UpdateConnector(default): done sources: connector\mutations.gql [1163B] connector\queries.gql [1855B] 

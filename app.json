@@ -20,7 +20,8 @@
         "foregroundImage": "./assets/splash-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.matheusfabio.angryfood"
+      "package": "com.matheusfabio.angryfood",
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
       "favicon": "./assets/icon.png"
@@ -31,12 +32,21 @@
       }
     },
     "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 34,
+            "targetSdkVersion": 34,
+            "buildToolsVersion": "34.0.0"
+          }
+        }
+      ],
+      "@react-native-firebase/app",
       "expo-font",
       "expo-router"
     ],
-    "runtimeVersion": {
-      "policy": "appVersion"
-    },
+    "runtimeVersion": "1.0.0",
     "updates": {
       "url": "https://u.expo.dev/1f90b02c-68b2-4f5d-ae32-383cdd678ce8"
     }

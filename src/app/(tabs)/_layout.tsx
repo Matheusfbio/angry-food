@@ -7,7 +7,7 @@ export default function RootLayout() {
         name="meetBooks"
         options={{
           title: "MeetBooks",
-          headerShown: true,
+          headerShown: false,
           headerTitleAlign: "center",
         }}
       />
