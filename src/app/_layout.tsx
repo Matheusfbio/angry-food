@@ -1,3 +1,5 @@
+import { colors } from "@/styles/color";
+import { fontFamily } from "@/styles/fontFamily";
 import { Stack, Tabs } from "expo-router";
 
 export default function RootLayout() {
@@ -15,7 +17,14 @@ export default function RootLayout() {
         }}
       />
       <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-      <Stack.Screen name="(top-tabs)" options={{ headerShown: true }} />
+      <Stack.Screen
+        name="(top-tabs)"
+        options={{
+          headerShown: false,
+          title: "Cardapio",
+          headerTitleAlign: "center",
+        }}
+      />
       <Stack.Screen name="perfil" options={{ headerShown: false }} />
     </Stack>
   );

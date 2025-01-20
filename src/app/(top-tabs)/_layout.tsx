@@ -19,13 +19,9 @@ export const MaterialTopTabs = withLayoutContext<
 export default function TabLayout() {
   return (
     <MaterialTopTabs>
-      <MaterialTopTabs.Screen name="index" options={{ title: "Word list" }} />
-      <MaterialTopTabs.Screen name="meetBooks" options={{ title: "list" }} />
-      {/* <MaterialTopTabs.Screen name="History" options={{ title: "History" }} /> */}
-      {/* <MaterialTopTabs.Screen
-        name="Favorites"
-        options={{ title: "Favorites" }}
-      /> */}
+      <MaterialTopTabs.Screen name="index" options={{ title: "Salgados" }} />
+      <MaterialTopTabs.Screen name="drink" options={{ title: "Bebidas" }} />
+      <MaterialTopTabs.Screen name="meal" options={{ title: "Refeições" }} />
     </MaterialTopTabs>
   );
 }

@@ -4,6 +4,9 @@
     "strict": true,
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "allowJs": true
   }
 }

@@ -24,7 +24,7 @@ export default function Meet() {
 
   return initializing ? (
     <SafeAreaView style={styles.container}>
-      <StatusBar style="auto" />
+      {/* <StatusBar style="auto" /> */}
 
       <Text style={styles.title}>Refeições da(o) {getDayOfWeek(today)}</Text>
       <View style={styles.menu}>

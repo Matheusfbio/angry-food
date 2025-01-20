@@ -1,10 +1,10 @@
 import { Link, router } from "expo-router";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-export default function MeetBooks() {
+export default function Meal() {
   return (
     <View style={styles.container}>
-      <Text style={styles.button}>MeetBooks</Text>
+      <Text style={styles.button}>Refeições</Text>
       <TouchableOpacity onPress={() => router.navigate("../")}>
         <Text style={styles.button}>voltar para a home</Text>
       </TouchableOpacity>
