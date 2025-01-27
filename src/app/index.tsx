@@ -1,7 +1,9 @@
-import { Link, router } from "expo-router";
+import { Link, useRouter } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import {
   Alert,
+  ImageBackground,
+  Pressable,
   SafeAreaView,
   StyleSheet,
   Text,
@@ -9,36 +11,19 @@ import {
 } from "react-native";
 
 export default function Home() {
-  const showAlert = () =>
-    Alert.alert(
-      "",
-      "Voce esta indo para a tela do admin",
-      [
-        {
-          // text: "OK",
-          // onPress: () => Alert.alert("", "OK"),
-        },
-      ],
-      {
-        cancelable: true,
-      }
-    );
+  const route = useRouter();
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar style="auto" />
-      <TouchableOpacity onPress={() => router.navigate("(top-tabs)")}>
-        {/* <Link href="/meet">asdasda</Link> */}
-
-        <Text style={styles.button}>ir para o cardapio</Text>
-      </TouchableOpacity>
-      {/* <TouchableOpacity onPress={() => router.navigate("/perfil")}>
-        <Text style={styles.button}>ir para o perfil</Text>
-      </TouchableOpacity> */}
+      <StatusBar style="light" />
+      <ImageBackground
+        source={require("../../assets/home.png")}
+        style={styles.image}
+      />
       <TouchableOpacity
-        onPressIn={showAlert}
-        onPress={() => router.navigate("/dashboard")}
+        onPress={() => route.push("/(top-tabs)/")}
+        style={styles.button}
       >
-        <Text style={styles.button}>ir para o painel</Text>
+        <Text>Peça agora</Text>
       </TouchableOpacity>
     </SafeAreaView>
   );
@@ -47,17 +32,19 @@ export default function Home() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: 12,
+    // marginTop: -10,
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
   },
   button: {
-    color: "black",
-    justifyContent: "center",
-    padding: 10,
-    marginBottom: 5,
+    marginTop: "-21%",
+    paddingVertical: "4%",
+    paddingHorizontal: "39%",
     alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#d3d3d3",
+    borderRadius: 20,
   },
   text: {
     color: "black",
@@ -65,5 +52,10 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     marginTop: 6,
     alignItems: "center",
+  },
+  image: {
+    width: 450,
+    height: 950,
+    marginTop: -50,
   },
 });

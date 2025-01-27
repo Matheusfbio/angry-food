@@ -1,17 +1,28 @@
+import PrimaryButton from "@/components/button/PrimaryButton";
 import { Link, router } from "expo-router";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import {
+  Alert,
+  SafeAreaView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 
 export default function Meal() {
+  const handlePress = () => {
+    router.push("../");
+    Alert.alert("Botão Clicado");
+  };
   return (
-    <View style={styles.container}>
-      <Text style={styles.button}>Refeições</Text>
-      <TouchableOpacity onPress={() => router.navigate("../")}>
-        <Text style={styles.button}>voltar para a home</Text>
-      </TouchableOpacity>
-      <Link replace href="/meet">
+    <SafeAreaView style={styles.container}>
+      {/* <Text style={styles.button}>Refeições</Text> */}
+      <PrimaryButton title="EAAAEAAAEAAAEAAAEAAAEAAA" onPress={handlePress} />
+
+      {/* <Link replace href="/meet">
         Lista de refeições
-      </Link>
-    </View>
+      </Link> */}
+    </SafeAreaView>
   );
 }
 

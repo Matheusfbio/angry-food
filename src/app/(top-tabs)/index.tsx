@@ -19,12 +19,12 @@ import { useState } from "react";
 import { Catalog } from "@/components/products/catalog";
 
 export default function Meet() {
-  const today = new Date(); // Data atual
+  const today = new Date();
   const [initializing, setInitializing] = useState(true);
 
   return initializing ? (
     <SafeAreaView style={styles.container}>
-      {/* <StatusBar style="auto" /> */}
+      <StatusBar style="auto" />
 
       <Text style={styles.title}>Refeições da(o) {getDayOfWeek(today)}</Text>
       <View style={styles.menu}>
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontFamily: fontFamily.bold,
-    marginTop: 40,
+    marginTop: 20,
     marginBottom: -10,
     fontSize: 26,
   },

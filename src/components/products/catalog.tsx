@@ -120,7 +120,8 @@ export function Catalog() {
 const styles = StyleSheet.create({
   container: {
     gap: 12,
-    paddingRight: 25,
+    marginRight: 50,
+    paddingHorizontal: 0,
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
